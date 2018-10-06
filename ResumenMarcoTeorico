@@ -1,0 +1,99 @@
+Marco teórico sobre Minería de datos enmarcado en el curso BT5405 Unidades de Investigación en Biotecnología
+
+
+
+
+
+Minería de datos
+Proceso de descubrimiento de patrones en set de datos con méetodos asociados a Machine Learning, estadíısticas y sistemas de bases de datos. Subcampo de la informática, transforma e interpreta datos. Ramas principales son la estadística, la manipulacióon de sistemas de información y la intelgencia artificial (IA).
+
+
+
+
+
+Machine Learning
+Rama de la IA que tiene por objetivo el desarrollo de técnicas que le permiten a los computadores reconocer patrones y comportamientos para así aprender por su propia cuenta a partir de ejemplos. Algoritmos de aprendizaje: Supervisados y No Supervisados
+
+
+
+
+
+Aprendizaje supervisado
+Predice comportamientos y patrones a partir de datos de entrenamiento conocidos.
+
+Ejemplos:
+
+K Nearest Neighbors:
+Considera la distancia entre el dato a clasificar respecto a los datos ya clasificados, dando así la categoría de los datos más cercanos al dato entregado.
+
+Naive Bayes:
+Considera la probabilidad de que un dato se encuentre en una categoría dada según los atributos que se encuentran en su rango cercano con la suposición de que todos los atributos son independientes entre ellos.
+
+Árboles de Decisión
+Considera diagramas lógicos para categorizar los datos entregados de forma sucesiva
+
+Support Vector Machine
+Considera los datos como puntos en el espacio y las categorías como áreas, categorizando así los nuevos datos entregados según su lugar en estas áreas.
+
+
+
+
+
+
+Aprendizaje no supervisado
+
+Agrupar valores de entrada en grupos de características similares entre los valores y de características distinas entre los grupos, generando clusters de datos.
+
+Ejemplos:
+
+K-Means
+Genera clusters a partir de centroides que minimicen la inercia entre los datos, generando nuevos centroides cada nueva iteración. Se le debe dar la cantidad de clusters a generar desde un principio.
+
+Variación Media
+Genera clusters a partir de centroides que cumplen la función de ser la media entre los datos, generando por sí solo la cantidad de clusters a generar.
+
+DBSCAN
+Genera clusters a partir de zonas de alta densidad y zonas de baja densidad, generando así clusters que no son convexos necesariamente
+
+Medidas de Evaluación de Modelos
+Para que un modelo sea funcional, éste se debe validar. Para validarlo se usan distintas medidas, entre las más importantes:
+
+
+
+
+
+
+Medidas de Aprendizaje Supervisado
+
+Tasa de Verdaderos Positivos
+Clasificaciones positivas correctas vs. clasificaciones positivas hechas
+
+Tasa de falsos Positivos
+Clasificaciones positivas erróneas vs. clasificaciones positivas hechas
+
+Eficiencia Global
+Clasificaciones correctas vs. clasificaciones hechas
+
+Medidas de Aprendizaje no supervisado
+
+Homogeneidad: Clusters con sólo miembros de una única clase
+
+Totalidad: Todos los miembros de una clase son asociados a un único cluster
+
+Coeficiente de silueta: Compara la distancia máxima entre datos de un mismo cluster y datos entre clusters.
+
+
+
+
+
+Métodos de Evaluación de Desempeño
+
+Métodos de evaluación de Aprendizaje supervisado
+
+Validación cruzada
+Consiste en tomar del conjunto de datos un grupo de entrenamiento y otro grupo de prueba para así generar con uno el entrenamiento del sistema y con el otro las pruebas para validar el sistema, puesto que validar un sistema con sus datos de entrenamiento no tienen validez
+
+Métodos de evaluación de aprendizaje no supervisado
+
+Índice Rand ajustado
+Mide la similaridad entre las clases verdaderas y las clases clusterizadas
